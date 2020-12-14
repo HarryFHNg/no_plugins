@@ -3,6 +3,8 @@
 
 
 
+
+
 "       HOW TO DO 90% OF WHAT PLUGINS DO (WITH JUST VIM)
 
 "                          Max Cantor
@@ -186,3 +188,11 @@ set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
 
 set rnu
 set nu
+
+nnoremap <silent> \ :Ag<SPACE>
+
+call plug#begin('~/.vim/plugged')
+Plug 'mhinz/vim-startify'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'epmatsw/ag.vim'
+call plug#end()
